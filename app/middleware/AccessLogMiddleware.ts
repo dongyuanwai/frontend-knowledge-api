@@ -3,7 +3,7 @@ import { accessLogger } from "../logger";
 
 function AccessLogMiddleware(ctx: Context, next: Next) {
     const logStr = `path:${ctx.path}, method:${ctx.method}, ua:${ctx.headers['user-agent']}`
-    accessLogger.info(logStr);
+    // accessLogger.info(logStr);
     return next();
 }
 

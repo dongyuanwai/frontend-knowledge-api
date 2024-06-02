@@ -8,7 +8,7 @@ const sequelize = new Sequelize(config.db.db_name, config.db.db_user, config.db.
     host: config.db.db_host,
     port: config.db.db_port as unknown as number ,
     dialect: 'mysql',
-    logging: msg => dbLogger.info(msg),
+    // logging: msg => dbLogger.info(msg),
     models:[path.join(__dirname, '..','model/**/*.ts'),path.join(__dirname, '..','model/**/*.js')],
     define:{
         timestamps: true,
