@@ -7,7 +7,7 @@ export class Knowledge extends Model<Knowledge> {
     @Column
     category: string
     @Column
-    renderType: number
+    renderType: string
     @Column
     title: string
     @Column
@@ -17,7 +17,9 @@ export class Knowledge extends Model<Knowledge> {
     @Column
     explanation: string
     @Column
-    level: number
+    level: string
     @Column
-    tagId: number
+    tagId: string
 }
+
+

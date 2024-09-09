@@ -4,8 +4,11 @@ import AdminService from "../service/AdminService";
 class IndexController {
     async index(ctx: Context){
         // logger.info("msg",'msg')
-        const admin =  await AdminService.getAdmin()
-        ctx.body = admin
+        // const admin =  await AdminService.getAdmin()
+        ctx.body = {
+            status:300,
+            msg:"路由错误,请检查"
+        }
     }
 }
 
